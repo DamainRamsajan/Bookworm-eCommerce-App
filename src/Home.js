@@ -1,5 +1,6 @@
 import React from 'react';
 import "./Home.css"
+import Product from './Product';
 
 function Home() {
     return (
@@ -47,6 +48,35 @@ function Home() {
                </div>
                 
             </div>
+            <div>
+                <h2 className = "home__rowTitle">Row Title</h2>
+                <div className = "home__row" >
+                    <Product />
+                    <Product />
+                    <Product />
+                    <Product />
+                    <Product />
+                </div>
+
+                <h2 className = "home__rowTitle">Row Title</h2>
+                <div className = "home__row" >
+                    <Product />
+                    <Product />
+                    <Product />
+                    <Product />
+                    <Product />
+                </div>
+
+                <h2 className = "home__rowTitle">Row Title</h2>
+                <div className = "home__row" >
+                    <Product />
+                    <Product />
+                    <Product />
+                    <Product />
+                    <Product />
+                </div>
+            </div>
+           
         </div>
     )
 }
