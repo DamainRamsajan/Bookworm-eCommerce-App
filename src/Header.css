@@ -6,6 +6,10 @@
   position: sticky;
   top: 0;
   z-index: 100;    
+  overflow-x: scroll;
+}
+.header::-webkit-scrollbar {
+  display: none;
 }
 
 .header__logo {
@@ -24,19 +28,22 @@
 }
 
 .header__searchInput {
-  height: 12px;
+  height: 14px;
   padding: 10px;
   border: none;
   width: 100%;
-  
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
 }
 
 .header__searchIcon {
   padding: 5px;
-  height: 22px !important;
+  height: 24px !important;
   background-color:#0F3657;
   border-radius: 2px;
   color: #cc5500 ;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
 }
 .header__nav {
    display: flex;
@@ -52,11 +59,11 @@
 }
 
 .header__optionLineOne {
-  font-size: 10px;
+  font-size: 12px;
 }
 
 .header__optionLineTwo {
-  font-size: 13px;
+  font-size: 16px;
   font-weight: 800;
 }
 
@@ -64,11 +71,14 @@
   color: #0F3657;
   display: flex;
   align-items: center;
-
+  margin-left: 8px;
+}
+.header__optionBasket > .MuiSvgIcon-root {
+ font-size: 38px;
 }
 
 .header__basketCount {
-  margin-left: 10px;
+  margin-left: 2px;
   margin-right: 10px;
 }
 

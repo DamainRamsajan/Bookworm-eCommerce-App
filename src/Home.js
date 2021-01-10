@@ -6,6 +6,7 @@ function Home() {
     return (
         <div className = "home" >
             <div className = "home__topMenu" >
+               
                <div className = "home__topMenuItems">
                     <img src="/images/arts.png" alt = "" />
                     <p>Arts &</p> <p> Photography</p>
@@ -48,32 +49,177 @@ function Home() {
                </div>
                 
             </div>
-            <div>
-                <h2 className = "home__rowTitle">Row Title</h2>
+            <div className = "home__rowContainer">
+                <h3 className = "home__rowTitle" >Items to Consider</h3>
                 <div className = "home__row" >
-                    <Product />
-                    <Product />
-                    <Product />
-                    <Product />
-                    <Product />
+                    <Product 
+                        id =  "123457"
+                        title = "A Christmas Carol in Prose; Being a Ghost Story of Christmas by Charles Dickens"
+                        image = "/images/scrooge.jpg"
+                        type = "ePub Download"
+                        price= {1.99}
+                        rating = {5}
+                    />
+                     <Product 
+                        id =  "123458" 
+                        title = "Red House"
+                        image = "/images/redHouse.jpg"
+                        type = "ePub Download"
+                        price= {1.99}
+                        rating = {4}
+                    />
+                     <Product 
+                        id =  "123459" 
+                        title = "A Christmas Carol in Prose; Being a Ghost Story of Christmas by Charles Dickens"
+                        image = "/images/scrooge.jpg"
+                        type = "ePub Download"
+                        price= {1.99}
+                        rating = {5}
+                    />
+                     <Product 
+                        id =  "123410" 
+                        title = "A Christmas Carol in Prose; Being a Ghost Story of Christmas by Charles Dickens"
+                        image = "/images/scrooge.jpg"
+                        type = "ePub Download"
+                        price= {1.99}
+                        rating = {5}
+                    />
+                     <Product 
+                        id =  "123411"
+                        title = "A Christmas Carol in Prose; Being a Ghost Story of Christmas by Charles Dickens"
+                        image = "/images/scrooge.jpg"
+                        type = "ePub Download"
+                        price= {1.99}
+                        rating = {5}
+                    />
+                     <Product 
+                        id =  "123412"
+                        title = "A Christmas Carol in Prose; Being a Ghost Story of Christmas by Charles Dickens"
+                        image = "/images/scrooge.jpg"
+                        type = "ePub Download"
+                        price= {1.99}
+                        rating = {5}
+                    />
+                     <Product 
+                        id =  "123413"
+                        title = "A Christmas Carol in Prose; Being a Ghost Story of Christmas by Charles Dickens"
+                        image = "/images/scrooge.jpg"
+                        type = "ePub Download"
+                        price= {1.99}
+                        rating = {5}
+                    />
+                     <Product 
+                        id =  "123414"
+                        title = "A Christmas Carol in Prose; Being a Ghost Story of Christmas by Charles Dickens"
+                        image = "/images/scrooge.jpg"
+                        type = "ePub Download"
+                        price= {1.99}
+                        rating = {5}
+                    />
                 </div>
 
-                <h2 className = "home__rowTitle">Row Title</h2>
+                <h3 className = "home__rowTitle">Most Downloaded Books This week</h3>
                 <div className = "home__row" >
-                    <Product />
-                    <Product />
-                    <Product />
-                    <Product />
-                    <Product />
+                <Product 
+                        id =  "123415"
+                        title = "A Christmas Carol in Prose; Being a Ghost Story of Christmas by Charles Dickens"
+                        image = "/images/scrooge.jpg"
+                        type = "ePub Download"
+                        price= {1.99}
+                        rating = {5}
+                    />
+                     <Product 
+                        id =  "123416"
+                        title = "A Christmas Carol in Prose; Being a Ghost Story of Christmas by Charles Dickens"
+                        image = "/images/scrooge.jpg"
+                        type = "ePub Download"
+                        price= {1.99}
+                        rating = {5}
+                    />
+                     <Product 
+                        id =  "123417"
+                        title = "A Christmas Carol in Prose; Being a Ghost Story of Christmas by Charles Dickens"
+                        image = "/images/scrooge.jpg"
+                        type = "ePub Download"
+                        price= {1.99}
+                        rating = {5}
+                    />
+                     <Product 
+                        id =  "123418"
+                        title = "A Christmas Carol in Prose; Being a Ghost Story of Christmas by Charles Dickens"
+                        image = "/images/scrooge.jpg"
+                        type = "ePub Download"
+                        price= {1.99}
+                        rating = {5}
+                    />
+                     <Product 
+                        id =  "123419"
+                        title = "A Christmas Carol in Prose; Being a Ghost Story of Christmas by Charles Dickens"
+                        image = "/images/scrooge.jpg"
+                        type = "ePub Download"
+                        price= {1.99}
+                        rating = {5}
+                    />
+                     <Product 
+                        id =  "123420"
+                        title = "A Christmas Carol in Prose; Being a Ghost Story of Christmas by Charles Dickens"
+                        image = "/images/scrooge.jpg"
+                        type = "ePub Download"
+                        price= {1.99}
+                        rating = {5}
+                    />
                 </div>
 
-                <h2 className = "home__rowTitle">Row Title</h2>
+                <h3 className = "home__rowTitle">Featured New Release Books</h3>
                 <div className = "home__row" >
-                    <Product />
-                    <Product />
-                    <Product />
-                    <Product />
-                    <Product />
+                <Product 
+                        id =  "123421"
+                        title = "A Christmas Carol in Prose; Being a Ghost Story of Christmas by Charles Dickens"
+                        image = "/images/scrooge.jpg"
+                        type = "ePub Download"
+                        price= {1.99}
+                        rating = {5}
+                    />
+                     <Product 
+                        id =  "123422"
+                        title = "A Christmas Carol in Prose; Being a Ghost Story of Christmas by Charles Dickens"
+                        image = "/images/scrooge.jpg"
+                        type = "ePub Download"
+                        price= {1.99}
+                        rating = {5}
+                    />
+                     <Product 
+                        id =  "123423"
+                        title = "A Christmas Carol in Prose; Being a Ghost Story of Christmas by Charles Dickens"
+                        image = "/images/scrooge.jpg"
+                        type = "ePub Download"
+                        price= {1.99}
+                        rating = {5}
+                    />
+                     <Product 
+                        id =  "123424"
+                        title = "A Christmas Carol in Prose; Being a Ghost Story of Christmas by Charles Dickens"
+                        image = "/images/scrooge.jpg"
+                        type = "ePub Download"
+                        price= {1.99}
+                        rating = {5}
+                    />
+                     <Product 
+                        id =  "123425"
+                        title = "A Christmas Carol in Prose; Being a Ghost Story of Christmas by Charles Dickens"
+                        image = "/images/scrooge.jpg"
+                        type = "ePub Download"
+                        price= {1.99}
+                        rating = {5}
+                    />
+                     <Product 
+                        id =  "123426"
+                        title = "A Christmas Carol in Prose; Being a Ghost Story of Christmas by Charles Dickens"
+                        image = "/images/scrooge.jpg"
+                        type = "ePub Download"
+                        price= {1.99}
+                        rating = {5}
+                    />
                 </div>
             </div>
            
