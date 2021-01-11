@@ -61,52 +61,52 @@ function Home() {
                         rating = {5}
                     />
                      <Product 
-                        id =  "123458" 
-                        title = "Red House"
-                        image = "/images/redHouse.jpg"
-                        type = "ePub Download"
-                        price= {1.99}
-                        rating = {4}
-                    />
-                     <Product 
                         id =  "123459" 
-                        title = "A Christmas Carol in Prose; Being a Ghost Story of Christmas by Charles Dickens"
-                        image = "/images/scrooge.jpg"
+                        title = "The Adventures of Sherlock Holmes by Arthur Conan Doyle"
+                        image = "/images/holmes.jpg"
                         type = "ePub Download"
                         price= {1.99}
                         rating = {5}
                     />
                      <Product 
                         id =  "123410" 
-                        title = "A Christmas Carol in Prose; Being a Ghost Story of Christmas by Charles Dickens"
-                        image = "/images/scrooge.jpg"
+                        title = "Pride and Prejudice by Jane Austen "
+                        image = "/images/pride.jpg"
                         type = "ePub Download"
                         price= {1.99}
                         rating = {5}
                     />
                      <Product 
                         id =  "123411"
-                        title = "A Christmas Carol in Prose; Being a Ghost Story of Christmas by Charles Dickens"
-                        image = "/images/scrooge.jpg"
+                        title = "Frankenstein; Or, The Modern Prometheus by Mary Wollstonecraft Shelley"
+                        image = "/images/frank.jpg"
                         type = "ePub Download"
                         price= {1.99}
                         rating = {5}
                     />
                      <Product 
                         id =  "123412"
-                        title = "A Christmas Carol in Prose; Being a Ghost Story of Christmas by Charles Dickens"
-                        image = "/images/scrooge.jpg"
+                        title = "Alice's Adventures in Wonderland by Lewis Carroll "
+                        image = "/images/alice.jpg"
                         type = "ePub Download"
                         price= {1.99}
                         rating = {5}
                     />
                      <Product 
                         id =  "123413"
-                        title = "A Christmas Carol in Prose; Being a Ghost Story of Christmas by Charles Dickens"
-                        image = "/images/scrooge.jpg"
+                        title = "The Scarlet Letter by Nathaniel Hawthorne"
+                        image = "/images/scarlet.jpg"
                         type = "ePub Download"
                         price= {1.99}
                         rating = {5}
+                    />
+                    <Product 
+                        id =  "123458" 
+                        title = "Red House"
+                        image = "/images/redHouse.jpg"
+                        type = "ePub Download"
+                        price= {1.99}
+                        rating = {4}
                     />
                      <Product 
                         id =  "123414"

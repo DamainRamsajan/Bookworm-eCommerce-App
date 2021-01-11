@@ -2,7 +2,7 @@ import React from 'react';
 import "./Payment.css"
 import { useStateValue } from './StateProvider';
 import CheckoutProduct from "./CheckoutProduct";
-import { Link } from 'react-router-dom';
+import { Link, useHistory } from 'react-router-dom';
 
 function Payment() {
 
@@ -21,7 +21,7 @@ function Payment() {
                         <h3>Billing Addresss</h3>
                     </div>
                     <div className = "payment__address">
-                        <h3>{user?.email}</h3>
+                        <p>{user?.email}</p>
                         <p>123 react lane</p>
                         <p>Los Angelas, CA</p>
                     </div>

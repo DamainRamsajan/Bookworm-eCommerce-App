@@ -31,3 +31,8 @@
     color:  #c7d7e4;
     height: 30px;
 }
+.product__button:hover {
+    background-color: #7eb11f ;
+    color: #f8b484;
+    cursor: pointer;
+}
