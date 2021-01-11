@@ -8,14 +8,15 @@ import Login from './Login';
 import React, { useEffect } from 'react';
 import { useStateValue } from './StateProvider';
 import { auth } from "./firebase";
+import Footer from "./Footer";
+import Payment from "./Payment";
 
 function App() {
 
   const[{user}, dispatch] = useStateValue();
 
   useEffect(() => {
-    const unsubscribe = auth().onAuthStateChanged ((authUser) => {
-      console.log ("the user is >>> ", authUser);
+    const unsubscribe = auth().onAuthStateChanged ((authUser) => {      
 
       if (authUser){
         //the user is logged in
@@ -48,16 +49,25 @@ function App() {
           
           <Route path = "/login">
             <Login/>
+            <Footer/>
           </Route>
 
           <Route path = "/checkout">
             <Header/>
             <Checkout/>
+            <Footer/>
+          </Route>
+
+          <Route path = "/payment">
+            <Header/>
+            <Payment/>
+            <Footer/>
           </Route>
 
           <Route path = "/">  
             <Header/>          
             <Home/>
+            <Footer/>
           </Route>
         </Switch>        
       </div>

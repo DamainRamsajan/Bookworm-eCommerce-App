@@ -18,7 +18,7 @@ function Header() {
             auth().signInWithEmailAndPassword ();
         }
     }
-
+    console.log ("the user is >>> ", user);
     return (
         <div className = "header"> 
             <Link to = "/" >
@@ -35,7 +35,7 @@ function Header() {
                 <div onClick={handleAuthentication} className = "header__option">
                     
                         <span className ="header__optionLineOne">
-                            Hello 
+                            Hello {!user ? "Guest": user.email}
                         </span>
                     <Link to = {!user && "/login"}>                
                         <span className ="header__optionLineTwo">
