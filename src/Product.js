@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import CartPopup from './CartPopup';
 import "./Product.css"
 import { useStateValue } from './StateProvider';
+// import CloseIcon from "@material-ui/icons/Close"
 
 function Product({id, title, image, price, rating }) {
     
@@ -33,7 +34,7 @@ function Product({id, title, image, price, rating }) {
                 <p>{title}</p>
                 <p>
                     <strong>Type: </strong>
-                    {/* {fileType} */}
+                    ePub {/* {fileType} */}
                 </p>
                 <p className = "product__price">
                     <small>$</small>
@@ -53,7 +54,9 @@ function Product({id, title, image, price, rating }) {
             
             {basketActive && (
                     <div className = "product__basketPopup">
+                        {/* <CloseIcon /> */}
                         <CartPopup/>
+                        
                     </div>
             )}
         </div>

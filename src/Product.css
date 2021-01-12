@@ -43,6 +43,11 @@
     z-index: 99999;
     height: 150px;
     width: 340px;
-    background-color: white;
-    border-radius: 60px;
+    background-color: #f3f3f3;
+    
+}
+.product__basketPopup > .MuiSvgIcon-root {
+    margin-left: 308px;
+    margin-top: 3px;
+    cursor: pointer;
 }
