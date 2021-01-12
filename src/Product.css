@@ -3,7 +3,7 @@
     flex-direction: column;
     margin-bottom: 20px;
     background-color: #f7d5bd;
-    z-index: 1;
+    /* z-index: 1; */
     margin-right: 5px;
     border-radius: 5px;
     align-items: center;
@@ -35,4 +35,14 @@
     background-color: #7eb11f ;
     color: #f8b484;
     cursor: pointer;
+}
+.product__basketPopup {
+    position: fixed !important;
+    bottom: 15vh;
+    right: 4vh;
+    z-index: 99999;
+    height: 150px;
+    width: 340px;
+    background-color: white;
+    border-radius: 60px;
 }

@@ -1,0 +1,10 @@
+.cartPopup  {
+    width: 340px;
+    height: 40px;
+    background: #cc5500;
+    font-size: 16px;
+}
+.cartPopup:hover  {
+    cursor: pointer;
+    background: #aeee7a;
+}

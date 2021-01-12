@@ -3,6 +3,7 @@ import "./Home.css"
 import Product from './Product';
 
 function Home() {
+
     return (
         <div className = "home" >
             <div className = "home__topMenu" >
@@ -49,7 +50,7 @@ function Home() {
                </div>
                 
             </div>
-            <div className = "home__rowContainer">
+            <div className = "home__rowContainer">    
                 <h3 className = "home__rowTitle" >Items to Consider</h3>
                 <div className = "home__row" >
                     <Product 

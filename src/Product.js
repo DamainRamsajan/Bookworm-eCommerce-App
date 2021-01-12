@@ -1,12 +1,15 @@
-import React from 'react';
+import React, { useState } from 'react';
+import CartPopup from './CartPopup';
 import "./Product.css"
 import { useStateValue } from './StateProvider';
 
 function Product({id, title, image, price, rating }) {
     
     const [{basket}, dispatch] = useStateValue();
+        
+    const [basketActive, setBasketActive] = useState(false); 
    
-    const addToBasket = () => {
+    const addToBasket = () => {        
         dispatch({
             type:"ADD_TO_BASKET",
             item: {
@@ -17,6 +20,11 @@ function Product({id, title, image, price, rating }) {
                 rating: rating,
             }
         })
+        if (basket.length >=0){
+            setBasketActive(true)
+        }else{
+            setBasketActive(false)
+        }
     }
 
     return (
@@ -43,6 +51,11 @@ function Product({id, title, image, price, rating }) {
 
             <button onClick = {addToBasket} className = "product__button">Add to Basket</button>
             
+            {basketActive && (
+                    <div className = "product__basketPopup">
+                        <CartPopup/>
+                    </div>
+            )}
         </div>
     )
 }

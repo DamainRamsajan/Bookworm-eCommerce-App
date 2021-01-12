@@ -18,7 +18,7 @@ function Payment() {
 
                 <div className = "payment__section">
                     <div className = "payment__title">
-                        <h3>Billing Addresss</h3>
+                        <h3>Billing Address</h3>
                     </div>
                     <div className = "payment__address">
                         <p>{user?.email}</p>
