@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import "./Payment.css"
 import { useStateValue } from './StateProvider';
 import CheckoutProduct from "./CheckoutProduct";
@@ -6,10 +6,12 @@ import { Link, useHistory } from 'react-router-dom';
 import {CardElement, useElements, useStripe} from "@stripe/react-stripe-js";
 import CurrencyFormat from 'react-currency-format';
 import { getBasketTotal } from './reducer';
+import axios from './axios';
 
 function Payment() {
 
     const [{basket, user}, dispatch] = useStateValue();
+    const history = useHistory ();
 
     const stripe = useStripe ();
     const elements = useElements ();
@@ -18,10 +20,34 @@ function Payment() {
     const [succeeded, setSucceeded] = useState(false);
     const [error, setError] = useState (null);
     const [disabled, setDisabled] = useState (true);
+    const [clientSecret, setClientSecret] = useState();
 
+    useEffect(() => {
+        const getClientSecret = async () =>{
+            const response = await axios ({
+                method: "post",
+                url: `/payments/create?total=${getBasketTotal(basket) * 100}`
+            });
+            setClientSecret(response.data.clientSecret)
+        }
+        getClientSecret();
+    }, [basket])
 
-    const handleSubmit = e => {
+    const handleSubmit = async (event) => {
+        event.preventDefault();
+        setProcessing(true);
 
+        const payload = await stripe.confirmCardPayment(clientSecret, {
+            payment_method: {
+                card: elements.getElement(CardElement)
+            }
+        }).then (({paymentIntent}) => {
+            setSucceeded(true);
+            setError(null);
+            setProcessing(false);
+
+            history.replace("/orders")
+        })
     }
 
     const handleChange = event => {
@@ -93,8 +119,8 @@ function Payment() {
                                        {processing ? <p>Processing</p> : "Buy Now"} 
                                     </span>
                                 </button>
-
                             </div> 
+                            {error && <div>{error}</div>}
                         </form>                                               
                     </div>
                 </div>

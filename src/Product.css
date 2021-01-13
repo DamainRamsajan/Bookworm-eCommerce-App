@@ -38,8 +38,8 @@
 }
 .product__basketPopup {
     position: fixed !important;
-    bottom: 15vh;
-    right: 4vh;
+    bottom: 40vh;
+    right: 1vh;
     z-index: 99999;
     height: 150px;
     width: 340px;

@@ -1,7 +1,10 @@
 *{
   margin: 0;
+  
 }
-
+* ::-webkit-scrollbar {
+  display: none;
+}
 body {
   background-color: rgb(234,237,237);
   margin: 0;
