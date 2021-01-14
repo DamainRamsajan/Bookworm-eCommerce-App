@@ -19,6 +19,5 @@
     flex: 0.7;
 }
 .checkout__right {
-    width: max-content;
     flex: 0.3 !important;
 }

@@ -1,14 +1,15 @@
-.cartPopup  {
+
+.cartPopup__button  {
     width: 340px;
     height: 40px;
     background: #cc5500;
     font-size: 16px;
 }
-.cartPopup:hover  {
+.cartPopup__button:hover  {
     cursor: pointer;
     background: #aeee7a;
 }
-.cartPopup__top {
+.cartPopup__topBar {
     display: flex;
     align-items: center;
 }

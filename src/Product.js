@@ -54,9 +54,7 @@ function Product({id, title, image, price, rating }) {
             
             {basketActive && (
                     <div className = "product__basketPopup">
-                        {/* <CloseIcon /> */}
-                        <CartPopup/>
-                        
+                        <CartPopup/>                        
                     </div>
             )}
         </div>
