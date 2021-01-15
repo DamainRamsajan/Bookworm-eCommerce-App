@@ -66,7 +66,7 @@ function Home() {
                         title = "The Adventures of Sherlock Holmes by Arthur Conan Doyle"
                         image = "/images/holmes.jpg"
                         type = "ePub Download"
-                        price= {1.99}
+                        price= {4.99}
                         rating = {5}
                     />
                      <Product 
@@ -74,7 +74,7 @@ function Home() {
                         title = "Pride and Prejudice by Jane Austen "
                         image = "/images/pride.jpg"
                         type = "ePub Download"
-                        price= {1.99}
+                        price= {9.99}
                         rating = {5}
                     />
                      <Product 
@@ -82,7 +82,7 @@ function Home() {
                         title = "Frankenstein; Or, The Modern Prometheus by Mary Wollstonecraft Shelley"
                         image = "/images/frank.jpg"
                         type = "ePub Download"
-                        price= {1.99}
+                        price= {4.99}
                         rating = {5}
                     />
                      <Product 
@@ -90,7 +90,7 @@ function Home() {
                         title = "Alice's Adventures in Wonderland by Lewis Carroll "
                         image = "/images/alice.jpg"
                         type = "ePub Download"
-                        price= {1.99}
+                        price= {9.99}
                         rating = {5}
                     />
                      <Product 
@@ -98,7 +98,7 @@ function Home() {
                         title = "The Scarlet Letter by Nathaniel Hawthorne"
                         image = "/images/scarlet.jpg"
                         type = "ePub Download"
-                        price= {1.99}
+                        price= {9.99}
                         rating = {5}
                     />
                     <Product 
