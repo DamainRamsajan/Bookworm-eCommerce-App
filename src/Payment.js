@@ -21,7 +21,7 @@ function Payment() {
     const [succeeded, setSucceeded] = useState(false);
     const [error, setError] = useState (null);
     const [disabled, setDisabled] = useState (true);
-    const [clientSecret, setClientSecret] = useState(true);
+    const [clientSecret, setClientSecret] = useState("true");
 
     useEffect(() => {
         const getClientSecret = async () =>{
@@ -35,6 +35,7 @@ function Payment() {
     }, [basket])
 
     console.log("client secret is ", clientSecret)
+    console.log(user)
 
     const handleSubmit = async (event) => {
         event.preventDefault();
@@ -116,7 +117,7 @@ function Payment() {
                             <div className = "payment__priceContainer">
                                 <CurrencyFormat 
                                     renderText = {(value) => (                                        
-                                            <h3>                            
+                                            <h3 className = "payment__orderTotal">                            
                                                 Order Total: 
                                                 <strong> {value}</strong>                        
                                             </h3>

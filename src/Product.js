@@ -33,12 +33,14 @@ function Product({id, title, image, price, rating }) {
             <div className = "product__info">
                 <p>{title}</p>
                 <p>
-                    <strong>Type: </strong>
-                    ePub {/* {fileType} */}
+                    Type {/* {fileType} */}
+                    <strong>epub: </strong>
+                    
                 </p>
                 <p className = "product__price">
-                    <small>$</small>
-                    <strong>{price}</strong>
+                    Donation:
+                    <small> $</small>
+                    <strong>{price}.00</strong>
                 </p>
                 <div className = "product__rating">
                     {Array(rating).fill().map((_, i) => (
